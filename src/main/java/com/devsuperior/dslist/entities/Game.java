@@ -22,7 +22,8 @@ public class Game {
     @Column(columnDefinition = "TEXT")
     private String longDescription;
 
-    public Game() {}
+    public Game() {
+    }
 
     public Game(
             Long id,
@@ -34,8 +35,7 @@ public class Game {
             String imgUrl,
             String shortDescription,
             String longDescription
-    )
-    {
+    ) {
         this.id = id;
         this.title = title;
         this.year = year;
